@@ -11,7 +11,7 @@ myInput.addEventListener("input", (e) => {
   let found = false;
   console.log(covert);
   if (SearchCovert === "") {
-    textCard.forEach((text) => (text.style.display = "none"));
+      textCard.forEach((text) => { text.style.display = "none"; conNotFound.style.display = "none"; });
     return;
   }
   for (let text of textCard) {
